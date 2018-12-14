@@ -1,2 +1,2 @@
-# my_angular_material_design
+# Examples angular material design
 Examples with angular material design

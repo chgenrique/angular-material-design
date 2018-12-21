@@ -39,4 +39,12 @@ export class TableMainComponent implements OnInit {
     });
   }
 
+  doShow(): void{
+    const dialogRef = this.dialog.open(MainDialogComponent, {
+      width: '250px',
+      data: {name: this.name, animal: this.animal}
+     // data: {name: this.name, animal: this.animal}
+    });
+  }
+
 }

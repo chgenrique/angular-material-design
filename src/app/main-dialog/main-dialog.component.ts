@@ -19,15 +19,11 @@ export class MainDialogComponent implements OnInit {
   ngOnInit() {
   }
 
-  onCloseConfirm() {
+  onConfirm() {
     this.dialogRef.close('Confirm');
   }
   onCloseCancel() {
     this.dialogRef.close('Cancel');
-  }
-
-  onNoClick(): void {
-    this.dialogRef.close();
   }
 
 }

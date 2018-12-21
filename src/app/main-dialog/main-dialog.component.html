@@ -1,0 +1,13 @@
+<div>
+  <h1 mat-dialog-title>Hi {{data.name}}</h1>
+  <h2 md-dialog-title>MY DIALOG</h2>
+  <div mat-dialog-content>
+    <p>What's your favorite animal? {{data.animal}}</p>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button md-raised-button (click)="onCloseConfirm()">CONFIRM</button>
+    <button md-raised-button (click)="onCloseCancel()">CANCEL</button>
+    <button mat-button>Ok</button>
+  </div>
+</div>

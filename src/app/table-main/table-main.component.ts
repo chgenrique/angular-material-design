@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator, MatSort } from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { TableMainDataSource } from './table-main-datasource';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MainDialogComponent } from '../main-dialog/main-dialog.component';
 
 @Component({
@@ -11,8 +12,8 @@ import { MainDialogComponent } from '../main-dialog/main-dialog.component';
 })
 
 export class TableMainComponent implements OnInit {
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+  @ViewChild(MatSort, { static: true }) sort: MatSort;
   dataSource: TableMainDataSource;
   animal: string;
   name: string;
